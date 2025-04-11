@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8e5639bd-b7e6-477b-96ca-70def6aef8ce",
+		"name": "Portaria Green Park",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12888716"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/boletos/importar-csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "arquivo",
+							"type": "file",
+							"src": "/C:/Projetos/PortariaGreenPark/examples/boletos.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/boletos/importar-csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"boletos",
+						"importar-csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/pdf/upload-pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pdf",
+							"type": "file",
+							"src": "/C:/Projetos/PortariaGreenPark/examples/boletosPDF.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/pdf/upload-pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pdf",
+						"upload-pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/boletos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/boletos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"boletos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/boletos?nome=MARCOS&valor_inicial=100&valor_final=500&id_lote=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/boletos?nome=MARCOS&valor_inicial=100&valor_final=500&id_lote=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"boletos"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "MARCOS"
+						},
+						{
+							"key": "valor_inicial",
+							"value": "100"
+						},
+						{
+							"key": "valor_final",
+							"value": "500"
+						},
+						{
+							"key": "id_lote",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/boletos?relatorio=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/boletos?relatorio=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"boletos"
+					],
+					"query": [
+						{
+							"key": "relatorio",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

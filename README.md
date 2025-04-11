@@ -12,6 +12,7 @@ Esta API simula a integração entre dois sistemas utilizados por um condomínio
 - [Estrutura do Banco de Dados](#-estrutura-do-banco-de-dados-oracle)
 - [Arquivos de Exemplo](#-arquivos-de-exemplo)
 - [Exemplo de Arquivo CSV](#-exemplo-de-arquivo-csv)
+- [📬 Coleção do Postman](#-coleção-do-postman)
 - [Endpoints](#-endpoints)
 
 
@@ -111,7 +112,7 @@ Endpoint: GET /boletos
 
 Instalação:
 
-    git clone https://github.com/seu-usuario/portaria-green-park.git
+    git clone https://github.com/viniciusMiguelCastro/PortariaGreenPark
     cd portaria-green-park
     npm install
 
@@ -174,6 +175,22 @@ Você pode usá-los diretamente nos endpoints de upload.
     Jose Souza;2020;450.00;23793381286000000002996000000010482440000045000
     Marcos Roberto;3030;250.00;237933812860000000029960000000104
 
+
+📬 Coleção do Postman
+
+Para facilitar os testes dos endpoints, incluímos uma coleção do Postman no projeto:
+
+    Arquivo: postman/portaria-green-park.postman_collection.json
+
+Para usar:
+
+    Abra o Postman.
+
+    Vá em Importar.
+
+    Selecione o arquivo localizado em postman/portaria-green-park.postman_collection.json.
+
+    Os endpoints estarão organizados para facilitar os testes com exemplos prontos.
 
 🔗 Endpoints
 📤 Importação de CSV
